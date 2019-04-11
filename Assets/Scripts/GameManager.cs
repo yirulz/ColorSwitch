@@ -24,10 +24,15 @@ namespace ColorSwitch
         }
         #endregion
 
+        public int score;
+        public GameObject player;
+        public UIManager ui;
+
         public void ResetGame()
         {
             Scene currentScene = SceneManager.GetActiveScene();
             SceneManager.LoadScene(currentScene.buildIndex);
         }
+
     }
 }
